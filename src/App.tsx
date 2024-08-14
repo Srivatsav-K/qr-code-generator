@@ -4,7 +4,7 @@ import { MutedText } from "./components/ui/muted-text";
 
 const App = () => {
   return (
-    <main className="container flex h-screen flex-col items-center justify-center gap-40">
+    <main className="container flex h-screen flex-col items-center justify-center gap-10 sm:gap-40">
       <Heading>QR Code Generator</Heading>
 
       <QrGenerator />
