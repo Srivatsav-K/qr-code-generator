@@ -4,13 +4,15 @@ import { MutedText } from "./components/ui/muted-text";
 
 const App = () => {
   return (
-    <main className="container flex h-screen flex-col items-center justify-center gap-10 sm:gap-40">
-      <Heading>QR Code Generator</Heading>
+    <main className="container flex min-h-screen flex-col items-center justify-between px-4 py-8 sm:py-16">
+      <Heading className="text-center text-3xl font-bold sm:text-4xl lg:text-5xl">
+        QR Code Generator
+      </Heading>
 
       <QrGenerator />
 
-      <div className="absolute bottom-4 right-4">
-        <MutedText>Built by Srivatsav K</MutedText>
+      <div className="mt-8 sm:mt-0">
+        <MutedText>Built with ❤️ by Srivatsav K</MutedText>
       </div>
     </main>
   );

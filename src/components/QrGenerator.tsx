@@ -44,7 +44,7 @@ const QrGenerator = () => {
   };
 
   return (
-    <div className="flex w-full flex-col items-center gap-4">
+    <div className="flex w-full flex-col items-center gap-8">
       {showConfetti && <Confetti />}
 
       {qrCodeValue && (
@@ -52,11 +52,15 @@ const QrGenerator = () => {
           <QRCodeSVG
             id="qr-code-svg"
             value={qrCodeValue}
-            size={256}
-            className="mb-4"
+            size={200}
+            className="mb-4 sm:mb-6"
           />
 
-          <Button variant={"ghost"} onClick={handleDownloadQRCode}>
+          <Button
+            variant={"ghost"}
+            onClick={handleDownloadQRCode}
+            className="text-sm sm:text-base"
+          >
             <DownloadIcon className="mr-2 h-4 w-4" /> Download QR Code as SVG
           </Button>
         </div>
@@ -71,9 +75,12 @@ const QrGenerator = () => {
           placeholder="Paste your link here"
           type="url"
           autoFocus
+          className="text-sm sm:text-base"
         />
 
-        <Button type="submit">Generate QR Code</Button>
+        <Button type="submit" className="text-sm sm:text-base">
+          Generate QR Code
+        </Button>
       </form>
     </div>
   );

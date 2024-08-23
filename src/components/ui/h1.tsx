@@ -1,11 +1,13 @@
-import { PropsWithChildren } from "react";
+import { cn } from "@/lib/utils";
+import { ReactNode } from "react";
 
-const Heading = ({ children }: PropsWithChildren) => {
-  return (
-    <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-      {children}
-    </h1>
-  );
-};
+interface HeadingProps {
+  children: ReactNode;
+  className?: string;
+}
+
+const Heading = ({ children, className = "" }: HeadingProps) => (
+  <h1 className={cn(className)}>{children}</h1>
+);
 
 export default Heading;
