@@ -4,4 +4,4 @@ A simple QR code generator that generates QR code for a given URL
 
 ## Demo
 
-<https://qr-code-generator-khaki-five.vercel.app/>
+<https://sri-qr-code-generator.vercel.app/>
