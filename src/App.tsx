@@ -12,7 +12,17 @@ const App = () => {
       <QrGenerator />
 
       <div className="mt-8 sm:mt-0">
-        <MutedText>Built with ❤️ by Srivatsav K</MutedText>
+        <MutedText>
+          Built with ❤️ by{" "}
+          <a
+            href="https://srivatsavk.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            Srivatsav K
+          </a>
+        </MutedText>
       </div>
     </main>
   );
